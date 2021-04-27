@@ -185,16 +185,13 @@ body{
     width: 153px;
     height: 88px;
 }
-.dishes-section::after{
-    content: "";
+.pizza-order-img{
+    margin: 0;
+    padding: 0;
     position: absolute;
-    top: -120px;
-    right: -150px;
-    background-image: url(/img/discount.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 311px;
-    height: 151px;
+    display: block;
+    top: -100px;
+    right: -130px;
 }
 .dishes-title{
     margin: 0;
