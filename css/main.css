@@ -74,6 +74,9 @@ body{
     text-decoration: none;
     color: var(--text-color);
 }
+.sitenav-link:hover{
+    text-decoration: underline;
+}
 .site-logo{
     margin-left: auto;
     margin-right: auto;
@@ -118,7 +121,17 @@ body{
     font-weight: 700;
     color: var(--text-color);
 }
-
+.phone-link::after{
+    content: "";
+    position: absolute;
+    right: -75px;
+    top: -7px;
+    background-image: url(/img/crab.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 52px;
+    height: 75px;
+}
 
 .top-section{
     position: relative;
@@ -149,6 +162,17 @@ body{
     line-height: 59px;
     text-align: center;
 }
+.top-section-link::before{
+    content: "";
+    position: absolute;
+    top: 472px;
+    right: 511px;
+    background-image: url(/img/plus.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 50px;
+    height: 50px;
+}
 .top-section-text{
     max-width: 622px;
     margin: 0 auto;
@@ -164,7 +188,7 @@ body{
     max-width: 200px;
     text-align: right;
 }
-.bax-text-span{
+.bg-text-span{
     color: #F87848;
 }
 
@@ -184,13 +208,13 @@ body{
     width: 153px;
     height: 88px;
 }
-.pizza-order-img{
+.pizza-shopping-link{
     margin: 0;
     padding: 0;
     position: absolute;
     display: block;
     top: -100px;
-    right: -130px;
+    right: -110px;
 }
 .dishes-title{
     margin: 0;
@@ -258,7 +282,7 @@ body{
     width: 170px;
     height: 173px;
     margin: 20px;
-    margin-bottom: 36px;
+    margin-bottom: 30px;
     margin-top: 0;
 }
 .karbonara-pizza::before{
@@ -270,7 +294,7 @@ body{
     width: 170px;
     height: 173px;
     margin: 20px;
-    margin-bottom: 36px;
+    margin-bottom: 30px;
     margin-top: 0;
 }
 .filadelfiya-pizza::before{
@@ -282,8 +306,22 @@ body{
     width: 170px;
     height: 173px;
     margin: 20px;
-    margin-bottom: 36px;
+    margin-bottom: 30px;
     margin-top: 0;
+}
+.xit-pizza{
+    position: absolute;
+    top: 5px;
+    left: 19px;
+    padding: 3px 18px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 140%;
+    text-align: center;
+    color: #FFFFFF;
+    background: linear-gradient(116.88deg, #FE3326 -4.28%, #F26E0E 112.69%), #59AAF1;
+    box-shadow: 0px 4px 8px rgba(205, 71, 41, 0.26);
+    border-radius: 3px;
 }
 .di-mare::before{
     content: "";
@@ -294,7 +332,7 @@ body{
     width: 170px;
     height: 173px;
     margin: 20px;
-    margin-bottom: 36px;
+    margin-bottom: 30px;
     margin-top: 0;
 }
 .kvatro-pizza::before{
@@ -306,7 +344,7 @@ body{
     width: 170px;
     height: 173px;
     margin: 20px;
-    margin-bottom: 36px;
+    margin-bottom: 30px;
     margin-top: 0;
 }
 .formadjio-pizza::before{
@@ -318,7 +356,7 @@ body{
     width: 170px;
     height: 173px;
     margin: 20px;
-    margin-bottom: 36px;
+    margin-bottom: 30px;
     margin-top: 0;
 }
 .kvatro-formadjio::before{
@@ -330,7 +368,7 @@ body{
     width: 170px;
     height: 173px;
     margin: 20px;
-    margin-bottom: 36px;
+    margin-bottom: 30px;
     margin-top: 0;
 }
 .last-pizza::before{
@@ -342,7 +380,7 @@ body{
     width: 170px;
     height: 173px;
     margin: 20px;
-    margin-bottom: 36px;
+    margin-bottom: 30px;
     margin-top: 0;
 }
 .pizza-item-title{
@@ -378,7 +416,7 @@ body{
     text-align: center;
     color: #121146;
 }
-.pizza-order-btn{
+.pizza-order-link{
     position: absolute;
     bottom: 25px;
     right: 43%;
@@ -388,7 +426,7 @@ body{
     background-color: white;
     cursor: pointer;
 }
-.pizza-order-btn::before{
+.pizza-order-link::before{
     content: "";
     display: block;
     background-image: url(/img/basket.png);
