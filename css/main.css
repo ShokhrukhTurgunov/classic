@@ -392,18 +392,6 @@ body{
     background-color: white;
     cursor: pointer;
 }
-.pizza-order-btn:hover{
-    background: linear-gradient(180deg, #FE5626 0%, #F23F0E 100%);
-}
-.pizza-order-btn:hover .pizza-order-btn::before{
-    content: "";
-    display: block;
-    background-image: url(/img/basket.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 12px;
-    height: 12px;
-}
 .pizza-order-btn::before{
     content: "";
     display: block;
