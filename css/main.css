@@ -9,29 +9,29 @@
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 300;
-    src: url('../fonts/montserrat-v15-latin-300.woff2') format('woff2'), 
-    url('../fonts/montserrat-v15-latin-300.woff') format('woff');
+    src: url('../fonts/montserrat-v15-latin_cyrillic-300.woff2') format('woff2'), 
+        url('../fonts/montserrat-v15-latin_cyrillic-300.woff') format('woff'); 
 }
 @font-face {
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 400;
-    src: url('../fonts/montserrat-v15-latin-regular.woff2') format('woff2'), 
-    url('../fonts/montserrat-v15-latin-regular.woff') format('woff'); 
+    src: url('../fonts/montserrat-v15-latin_cyrillic-regular.woff2') format('woff2'), 
+        url('../fonts/montserrat-v15-latin_cyrillic-regular.woff') format('woff'); 
 }
 @font-face {
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 600;
-    src: url('../fonts/montserrat-v15-latin-600.woff2') format('woff2'), 
-    url('../fonts/montserrat-v15-latin-600.woff') format('woff'); 
+    src: url('../fonts/montserrat-v15-latin_cyrillic-600.woff2') format('woff2'), 
+        url('../fonts/montserrat-v15-latin_cyrillic-600.woff') format('woff'); 
 }
 @font-face {
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 700;
-    src: url('../fonts/montserrat-v15-latin-700.woff2') format('woff2'), 
-    url('../fonts/montserrat-v15-latin-700.woff') format('woff'); 
+    src: url('../fonts/montserrat-v15-latin_cyrillic-700.woff2') format('woff2'), 
+        url('../fonts/montserrat-v15-latin_cyrillic-700.woff') format('woff'); 
 }
 
 html{
@@ -43,9 +43,10 @@ body{
     padding: 0;
     font-family: var(--font-family);
     color: var(--text-color);
+    overflow-x: hidden;
 }
 .container{
-    max-width: 1120px;
+    max-width: 1160px;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -54,6 +55,7 @@ body{
     margin: 0 auto;
     background-color: #F0F5FB;
     padding-top: 25px;
+    margin-bottom: 140px;
 }
 .header-container{
     display: flex;
@@ -165,4 +167,249 @@ body{
 }
 .bax-text-span{
     color: #F87848;
+}
+
+/* MAIN */
+
+.dishes-section{
+    position: relative;
+}
+.dishes-section::before{
+    content: "";
+    position: absolute;
+    top: 60px;
+    left: -130px;
+    background-image: url(/img/bone.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 153px;
+    height: 88px;
+}
+.dishes-section::after{
+    content: "";
+    position: absolute;
+    top: -120px;
+    right: -150px;
+    background-image: url(/img/discount.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 311px;
+    height: 151px;
+}
+.dishes-title{
+    margin: 0;
+    margin-bottom: 49px;
+    padding: 0;
+    text-align: center;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 59px;
+    color: var(--text-color);
+}
+.dishes-list{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-bottom: 40px;
+}
+.dishes-link{
+    margin-right: 31px;
+    padding: 17px 40px;
+    background: linear-gradient(0deg, #ECEEF6, #ECEEF6);
+    border-radius: 45px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    color: var(--text-color);
+}
+.dishes-link:hover{
+    background: #59AAF1;
+    color: #ffffff;
+}
+
+.pizza-list{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+.pizza-item{
+    position: relative;
+    max-width: 220px;
+    padding: 20px;
+    padding-top: 36px;
+    margin-bottom: 30px;
+    margin-right: 40px;
+    background-image: url(/img/card.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 375px;
+}
+.di-mare,
+.last-pizza{
+    margin: 0;
+}
+.quatro-pizza::before{
+    content: "";
+    display: block;
+    background-image: url(/img/quatro.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 170px;
+    height: 173px;
+    margin: 20px;
+    margin-bottom: 36px;
+    margin-top: 0;
+}
+.karbonara-pizza::before{
+    content: "";
+    display: block;
+    background-image: url(/img/karbonara.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 170px;
+    height: 173px;
+    margin: 20px;
+    margin-bottom: 36px;
+    margin-top: 0;
+}
+.filadelfiya-pizza::before{
+    content: "";
+    display: block;
+    background-image: url(/img/filadelfiya.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 170px;
+    height: 173px;
+    margin: 20px;
+    margin-bottom: 36px;
+    margin-top: 0;
+}
+.di-mare::before{
+    content: "";
+    display: block;
+    background-image: url(/img/di-mare.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 170px;
+    height: 173px;
+    margin: 20px;
+    margin-bottom: 36px;
+    margin-top: 0;
+}
+.kvatro-pizza::before{
+    content: "";
+    display: block;
+    background-image: url(/img/kvatro.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 170px;
+    height: 173px;
+    margin: 20px;
+    margin-bottom: 36px;
+    margin-top: 0;
+}
+.formadjio-pizza::before{
+    content: "";
+    display: block;
+    background-image: url(/img/kvatro2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 170px;
+    height: 173px;
+    margin: 20px;
+    margin-bottom: 36px;
+    margin-top: 0;
+}
+.kvatro-formadjio::before{
+    content: "";
+    display: block;
+    background-image: url(/img/kvatro3.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 170px;
+    height: 173px;
+    margin: 20px;
+    margin-bottom: 36px;
+    margin-top: 0;
+}
+.last-pizza::before{
+    content: "";
+    display: block;
+    background-image: url(/img/kvatro4.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 170px;
+    height: 173px;
+    margin: 20px;
+    margin-bottom: 36px;
+    margin-top: 0;
+}
+.pizza-item-title{
+    display: inline;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    color: var(--text-color);
+}
+.pizza-list-span{
+    position: absolute;
+    right: 20px;
+    font-size: 12px;
+    line-height: 140%;
+    color: var(--text-color);
+}
+.pizza-recipe-text{
+    margin-top: 8px;
+    margin-bottom: 19px;
+    padding: 0;
+    font-size: 12px;
+    line-height: 140%;
+    color: var(--text-color);
+}
+.pizza-price{
+    margin: 0;
+    margin-bottom: 18px;
+    padding: 0;
+    text-align: center;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 140%;
+    text-align: center;
+    color: #121146;
+}
+.pizza-order-btn{
+    position: absolute;
+    bottom: 25px;
+    right: 43%;
+    padding: 10px;
+    border: 2px solid #ECEEF7;
+    border-radius: 59px;
+    background-color: white;
+    cursor: pointer;
+}
+.pizza-order-btn:hover{
+    background: linear-gradient(180deg, #FE5626 0%, #F23F0E 100%);
+}
+.pizza-order-btn:hover .pizza-order-btn::before{
+    content: "";
+    display: block;
+    background-image: url(/img/basket.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 12px;
+    height: 12px;
+}
+.pizza-order-btn::before{
+    content: "";
+    display: block;
+    background-image: url(/img/basket.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 12px;
+    height: 12px;
 }
