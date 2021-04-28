@@ -541,9 +541,9 @@ body{
     height: 25px;
     transition: transform 0.4s ease;
 }
-.site-update-link:hover.site-update-link::before{
-    transform: rotate(180deg);
-}
-.site-update-link:active{
+.site-update-link:hover{
     background:  rgba(254, 85, 38, 0.753);
+}
+.site-update-link:active.site-update-link::before{
+    transform: rotate(180deg);
 }
