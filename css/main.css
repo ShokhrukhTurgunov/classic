@@ -162,6 +162,7 @@ body{
     line-height: 59px;
     text-align: center;
 }
+
 .top-section-link::before{
     content: "";
     position: absolute;
@@ -263,11 +264,12 @@ body{
 }
 
 .pizza-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     margin: 0;
     margin-bottom: 66px;
     padding: 0;
-    display: flex;
-    flex-wrap: wrap;
     list-style: none;
 }
 .pizza-item{
@@ -276,7 +278,7 @@ body{
     padding: 20px;
     padding-top: 36px;
     margin-bottom: 50px;
-    margin-right: 40px;
+    margin-right: 20px;
     border: 2px solid #ECEEF7;
     border-radius: 15px;
     background: #FFFFFF;
@@ -533,6 +535,7 @@ body{
     content: "";
     top: -5px;
     background-image: url(/img/update.png);
+    background-repeat: no-repeat;
     background-size: contain;
     width: 25px;
     height: 25px;
