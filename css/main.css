@@ -208,6 +208,18 @@ body{
     width: 153px;
     height: 88px;
 }
+.dishes-section::after{
+    content: "";
+    position: absolute;
+    bottom: -250px;
+    right: -230px;
+    background-image: url(/img/bone2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 198px;
+    height: 149px;
+    opacity: 0.1;
+}
 .pizza-shopping-link{
     margin: 0;
     padding: 0;
@@ -232,7 +244,7 @@ body{
     margin: 0;
     padding: 0;
     list-style: none;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
 }
 .dishes-link{
     margin-right: 31px;
@@ -252,6 +264,7 @@ body{
 
 .pizza-list{
     margin: 0;
+    margin-bottom: 66px;
     padding: 0;
     display: flex;
     flex-wrap: wrap;
@@ -259,19 +272,39 @@ body{
 }
 .pizza-item{
     position: relative;
-    max-width: 220px;
+    max-width: 216px;
     padding: 20px;
     padding-top: 36px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     margin-right: 40px;
-    background-image: url(/img/card.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 375px;
+    border: 2px solid #ECEEF7;
+    border-radius: 15px;
+    background: #FFFFFF;
+    z-index: 4;
+}
+.pizza-item::after{
+    position: absolute;
+    background-color: #FFFFFF;
+    width: 50px;
+    height: 50px;
+    content: "";
+    border-radius: 0 0 25px 0 ;
+    border-right: 2px solid #eceef7;
+    border-bottom: 2px solid #eceef7;
+    transform: rotate(45deg);
+    bottom: -27px;
+    left: 103px;
+    z-index: -4;
 }
 .di-mare,
 .last-pizza{
-    margin: 0;
+    margin-right: 0;
+}
+.kvatro-pizza,
+.formadjio-pizza,
+.kvatro-formadjio,
+.last-pizza{
+    margin-bottom: 0;
 }
 .quatro-pizza::before{
     content: "";
@@ -284,6 +317,7 @@ body{
     margin: 20px;
     margin-bottom: 30px;
     margin-top: 0;
+    transition: transform 0.7s ease;
 }
 .karbonara-pizza::before{
     content: "";
@@ -296,6 +330,7 @@ body{
     margin: 20px;
     margin-bottom: 30px;
     margin-top: 0;
+    transition: transform 0.7s ease;
 }
 .filadelfiya-pizza::before{
     content: "";
@@ -308,6 +343,7 @@ body{
     margin: 20px;
     margin-bottom: 30px;
     margin-top: 0;
+    transition: transform 0.7s ease;
 }
 .xit-pizza{
     position: absolute;
@@ -334,6 +370,7 @@ body{
     margin: 20px;
     margin-bottom: 30px;
     margin-top: 0;
+    transition: transform 0.7s ease;
 }
 .kvatro-pizza::before{
     content: "";
@@ -346,6 +383,7 @@ body{
     margin: 20px;
     margin-bottom: 30px;
     margin-top: 0;
+    transition: transform 0.7s ease;
 }
 .formadjio-pizza::before{
     content: "";
@@ -358,6 +396,7 @@ body{
     margin: 20px;
     margin-bottom: 30px;
     margin-top: 0;
+    transition: transform 0.7s ease;
 }
 .kvatro-formadjio::before{
     content: "";
@@ -370,6 +409,7 @@ body{
     margin: 20px;
     margin-bottom: 30px;
     margin-top: 0;
+    transition: transform 0.7s ease;
 }
 .last-pizza::before{
     content: "";
@@ -382,6 +422,20 @@ body{
     margin: 20px;
     margin-bottom: 30px;
     margin-top: 0;
+    transition: transform 0.8s ease;
+}
+.pizza-item:hover.quatro-pizza::before,
+.pizza-item:hover.karbonara-pizza::before,
+.pizza-item:hover.filadelfiya-pizza::before,
+.pizza-item:hover.di-mare::before,
+.pizza-item:hover.kvatro-pizza::before,
+.pizza-item:hover.formadjio-pizza::before,
+.pizza-item:hover.kvatro-formadjio::before,
+.pizza-item:hover.last-pizza::before{
+    transform: rotate(90deg);
+}
+.pizza-item-title-link{
+    text-decoration: none;
 }
 .pizza-item-title{
     display: inline;
@@ -390,9 +444,13 @@ body{
     line-height: 140%;
     color: var(--text-color);
 }
+.pizza-item-title:hover{
+    color: rgba(33, 33, 33, 0.525);
+}
 .pizza-list-span{
     position: absolute;
-    right: 20px;
+    bottom: 131px;
+    right: 15px;
     font-size: 12px;
     line-height: 140%;
     color: var(--text-color);
@@ -418,8 +476,8 @@ body{
 }
 .pizza-order-link{
     position: absolute;
-    bottom: 25px;
-    right: 43%;
+    bottom: -15px;
+    right: 42%;
     padding: 10px;
     border: 2px solid #ECEEF7;
     border-radius: 59px;
@@ -434,4 +492,55 @@ body{
     background-size: contain;
     width: 12px;
     height: 12px;
+}
+.pizza-order-link:hover{
+    position: absolute;
+    bottom: -15px;
+    right: 42%;
+    padding: 10px;
+    border: 2px solid #ECEEF7;
+    border-radius: 59px;
+    background: linear-gradient(287.74deg, #F58656 8.52%, #FE5626 92.72%);
+    cursor: pointer;
+}
+.pizza-order-link:hover.pizza-order-link::before{
+    content: "";
+    display: block;
+    background-image: url(/img/w-basket.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 12px;
+    height: 12px;
+}
+
+
+.site-update{
+    display: flex;
+    justify-content: center;
+}
+.site-update-link{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 17px;
+    margin-bottom: 183px;
+    background: linear-gradient(287.74deg, #F58656 8.52%, #FE5626 92.72%);
+    box-shadow: 0px 4px 8px rgba(205, 169, 41, 0.26);
+    border-radius: 59px;
+}
+.site-update-link::before{
+    content: "";
+    top: -5px;
+    background-image: url(/img/update.png);
+    background-size: contain;
+    width: 25px;
+    height: 25px;
+    transition: transform 0.4s ease;
+}
+.site-update-link:hover.site-update-link::before{
+    transform: rotate(180deg);
+}
+.site-update-link:active{
+    background:  rgba(254, 85, 38, 0.753);
 }
