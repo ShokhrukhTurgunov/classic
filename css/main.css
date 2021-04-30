@@ -318,10 +318,9 @@ body{
 .last-pizza{
     margin-bottom: 0;
 }
-.quatro-pizza::before{
+.pizza-item::before{
     content: "";
     display: block;
-    background-image: url(/img/quatro.png);
     background-repeat: no-repeat;
     background-size: contain;
     width: 170px;
@@ -330,32 +329,15 @@ body{
     margin-bottom: 30px;
     margin-top: 0;
     transition: transform 0.7s ease;
+}
+.quatro-pizza::before{
+    background-image: url(/img/quatro.png);
 }
 .karbonara-pizza::before{
-    content: "";
-    display: block;
     background-image: url(/img/karbonara.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 170px;
-    height: 173px;
-    margin: 20px;
-    margin-bottom: 30px;
-    margin-top: 0;
-    transition: transform 0.7s ease;
 }
 .filadelfiya-pizza::before{
-    content: "";
-    display: block;
     background-image: url(/img/filadelfiya.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 170px;
-    height: 173px;
-    margin: 20px;
-    margin-bottom: 30px;
-    margin-top: 0;
-    transition: transform 0.7s ease;
 }
 .xit-pizza{
     position: absolute;
@@ -372,78 +354,21 @@ body{
     border-radius: 3px;
 }
 .di-mare::before{
-    content: "";
-    display: block;
     background-image: url(/img/di-mare.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 170px;
-    height: 173px;
-    margin: 20px;
-    margin-bottom: 30px;
-    margin-top: 0;
-    transition: transform 0.7s ease;
 }
 .kvatro-pizza::before{
-    content: "";
-    display: block;
     background-image: url(/img/kvatro.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 170px;
-    height: 173px;
-    margin: 20px;
-    margin-bottom: 30px;
-    margin-top: 0;
-    transition: transform 0.7s ease;
 }
 .formadjio-pizza::before{
-    content: "";
-    display: block;
     background-image: url(/img/kvatro2.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 170px;
-    height: 173px;
-    margin: 20px;
-    margin-bottom: 30px;
-    margin-top: 0;
-    transition: transform 0.7s ease;
 }
 .kvatro-formadjio::before{
-    content: "";
-    display: block;
     background-image: url(/img/kvatro3.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 170px;
-    height: 173px;
-    margin: 20px;
-    margin-bottom: 30px;
-    margin-top: 0;
-    transition: transform 0.7s ease;
 }
 .last-pizza::before{
-    content: "";
-    display: block;
     background-image: url(/img/kvatro4.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 170px;
-    height: 173px;
-    margin: 20px;
-    margin-bottom: 30px;
-    margin-top: 0;
-    transition: transform 0.8s ease;
 }
-.pizza-item:hover.quatro-pizza::before,
-.pizza-item:hover.karbonara-pizza::before,
-.pizza-item:hover.filadelfiya-pizza::before,
-.pizza-item:hover.di-mare::before,
-.pizza-item:hover.kvatro-pizza::before,
-.pizza-item:hover.formadjio-pizza::before,
-.pizza-item:hover.kvatro-formadjio::before,
-.pizza-item:hover.last-pizza::before{
+.pizza-item:hover.pizza-item::before{
     transform: rotate(90deg);
 }
 .pizza-item-title-link{
@@ -510,7 +435,7 @@ body{
     bottom: -15px;
     right: 42%;
     padding: 10px;
-    border: 2px solid #ECEEF7;
+    border: none;
     border-radius: 59px;
     background: linear-gradient(287.74deg, #F58656 8.52%, #FE5626 92.72%);
     cursor: pointer;
